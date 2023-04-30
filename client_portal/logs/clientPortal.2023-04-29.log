@@ -1,0 +1,18 @@
+2023-04-29 17:22:21.733 [main] INFO  com.portal.MainApp - MainApp.main:39 - contex :: /noteassets
+2023-04-29 17:22:21.737 [main] INFO  com.portal.MainApp - MainApp.test:50 - ****************** Test ***************
+2023-04-29 17:22:22.068 [main] INFO  org.springframework.boot.devtools.restart.RestartApplicationListener - RestartApplicationListener.onApplicationStartingEvent:77 - Restart disabled due to System property 'spring.devtools.restart.enabled' being set to false
+2023-04-29 17:22:22.610 [main] INFO  com.portal.MainApp - StartupInfoLogger.logStarting:55 - Starting MainApp on DESKTOP-EVVDSQV with PID 2668 (D:\Wokspace\OWN_NOTEASSETS\note_assets\client_portal\target\classes started by Maddy in D:\Wokspace\OWN_NOTEASSETS\note_assets\client_portal)
+2023-04-29 17:22:22.611 [main] INFO  com.portal.MainApp - SpringApplication.logStartupProfileInfo:651 - No active profile set, falling back to default profiles: default
+2023-04-29 17:22:22.695 [main] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - DeferredLog.logTo:225 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-29 17:22:24.344 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - TomcatWebServer.initialize:108 - Tomcat initialized with port(s): 9090 (http)
+2023-04-29 17:22:24.357 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - DirectJDKLog.log:173 - Initializing ProtocolHandler ["http-nio-9090"]
+2023-04-29 17:22:24.358 [main] INFO  org.apache.catalina.core.StandardService - DirectJDKLog.log:173 - Starting service [Tomcat]
+2023-04-29 17:22:24.358 [main] INFO  org.apache.catalina.core.StandardEngine - DirectJDKLog.log:173 - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2023-04-29 17:22:24.478 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/noteassets] - DirectJDKLog.log:173 - Initializing Spring embedded WebApplicationContext
+2023-04-29 17:22:24.479 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - ServletWebServerApplicationContext.prepareWebApplicationContext:285 - Root WebApplicationContext: initialization completed in 1784 ms
+2023-04-29 17:22:24.776 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - ExecutorConfigurationSupport.initialize:181 - Initializing ExecutorService 'applicationTaskExecutor'
+2023-04-29 17:22:25.058 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - DirectJDKLog.log:173 - Starting ProtocolHandler ["http-nio-9090"]
+2023-04-29 17:22:25.092 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - TomcatWebServer.start:220 - Tomcat started on port(s): 9090 (http) with context path '/noteassets'
+2023-04-29 17:22:25.109 [main] INFO  com.portal.MainApp - StartupInfoLogger.logStarted:61 - Started MainApp in 3.06 seconds (JVM running for 3.963)
+2023-04-29 17:26:25.209 [main] INFO  com.portal.MainApp - MainApp.main:39 - contex :: /noteassets
+2023-04-29 17:26:25.213 [main] INFO  com.portal.MainApp - MainApp.test:50 - ****************** Test ***************
