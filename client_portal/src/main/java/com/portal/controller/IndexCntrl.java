@@ -11,10 +11,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class IndexCntrl {
 
-	@RequestMapping(value = "/index", method = RequestMethod.GET)
+	@RequestMapping(value = "/login", method = RequestMethod.GET)
 	public String index(Model model, HttpServletRequest request, HttpServletResponse response) {
 
-		return "index";
+		return "login";
 	}
 
 }
