@@ -98,9 +98,9 @@
 							 	<label class="form-label" for="form3Example3"><i class="fa fa-venus-mars"></i> Gender</label>
 								<select class="form-select form-select-sm" aria-label="Default select example">
   									<option disabled selected>---- select ----</option>
-  									<option value="M">Male</option>
-  									<option value="F">FeMale</option>
-  									<option value="T">TransGender</option>
+  									<option value="Male">Male</option>
+  									<option value="FeMale">FeMale</option>
+  									<option value="TransGender">TransGender</option>
 								</select>
 							</div>
 							
