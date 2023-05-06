@@ -1,5 +1,8 @@
 <?xml version="1.0"?>
-<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
@@ -51,6 +54,38 @@
 			<artifactId>jstl</artifactId>
 		</dependency>
 
+		<!-- JSTL tag lib -->
+		<dependency>
+			<groupId>javax.servlet.jsp.jstl</groupId>
+			<artifactId>javax.servlet.jsp.jsti-api</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.tomcat</groupId>
+			<artifactId>tomcat-jdbc</artifactId>
+			<version>9.0.10</version>
+		</dependency>
+
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
@@ -77,10 +112,10 @@
 			</plugins>
 		</pluginManagement>
 		<resources>
-        <resource>
-            <directory>src/main/resources</directory>
-        </resource>
-    </resources>
+			<resource>
+				<directory>src/main/resources</directory>
+			</resource>
+		</resources>
 	</build>
 
 </project>

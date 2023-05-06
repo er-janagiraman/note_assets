@@ -12,6 +12,18 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class LoginCntrl {
 
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
+	public String login(Model model, HttpServletRequest request, HttpServletResponse response) {
+
+		return "login";
+	}
+	
+	@RequestMapping(value = "/loginVali", method = RequestMethod.POST)
+	public String loginVali(Model model, HttpServletRequest request, HttpServletResponse response) {
+
+		return "dashboard";
+	}
+	
+	@RequestMapping(value = "/register", method = RequestMethod.POST)
 	public String index(Model model, HttpServletRequest request, HttpServletResponse response) {
 
 		return "login";
