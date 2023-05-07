@@ -1,95 +1,91 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-
-	<!-- The basics of the project definition, including the parent pom and the project name, version, and packaging -->
+<?xml version="1.0"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId> org.springframework.boot </groupId>
+		<artifactId> spring-boot-starter-parent </artifactId>
+		<version> 2.3.1.RELEASE </version>
+	</parent>
+
 	<groupId>com</groupId>
 	<artifactId>client_portal</artifactId>
 	<version>1.0</version>
 	<packaging>war</packaging>
-
-	<name>My Spring Boot App</name>
-	<description>My first Spring Boot app</description>
+	<!-- <name>client_portal Maven Webapp</name> <url>http://maven.apache.org</url> -->
 
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
-  
-	<!-- Define the parent pom for Spring Boot -->
-	<parent>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.6.3</version>
-		<relativePath /> <!-- lookup parent from repository -->
-	</parent>
 
-	<!-- Define the dependencies for your Spring Boot app -->
 	<dependencies>
 
-		<!-- Spring Web dependency for building web applications -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
-		<!-- The DataSource dependency is used to configure the database connection in a Spring Boot application. -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-jdbc</artifactId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<scope>runtime</scope>
+			<optional>true</optional>
 		</dependency>
 
-		<!-- JSP dependency for server-side rendering of dynamic web pages -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-configuration-processor</artifactId>
+			<optional>true</optional>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.apache.tomcat.embed/tomcat-embed-jasper -->
 		<dependency>
 			<groupId>org.apache.tomcat.embed</groupId>
 			<artifactId>tomcat-embed-jasper</artifactId>
 			<scope>provided</scope>
 		</dependency>
 
-		<!-- PostgreSQL JDBC driver for connecting to PostgreSQL database -->
+		<!-- https://mvnrepository.com/artifact/javax.servlet/jstl -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+		</dependency>
+
+		<!-- <dependency> <groupId>junit</groupId> <artifactId>junit</artifactId> 
+			<version>3.8.1</version> <scope>test</scope> </dependency> -->
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jdbc</artifactId>
+		</dependency>
+
 		<dependency>
 			<groupId>org.postgresql</groupId>
 			<artifactId>postgresql</artifactId>
-			<scope>runtime</scope>
+			<version>${postgresql.version}</version>
 		</dependency>
 
-		<!-- Spring JDBC dependency for working with JDBC databases -->
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-jdbc</artifactId>
-		</dependency>
-
-		<!-- Spring Data JPA dependency for working with JPA/Hibernate -->
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-jpa</artifactId>
-		</dependency>
-
-		<!-- Spring Security dependency for securing web applications -->
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-security</artifactId>
-		</dependency>
-
-		<!-- Tomcat JDBC Connection Pool: an alternative to the default HikariCP pool, which can be used with Spring JDBC or JPA. -->
-		<dependency>
-			<groupId>org.apache.tomcat</groupId>
-			<artifactId>tomcat-jdbc</artifactId>
-			<version>9.0.50</version>
+			<groupId>com</groupId>
+			<artifactId>func_logic</artifactId>
+			<version>1.0</version>
 		</dependency>
 
 	</dependencies>
 
-	<!-- The build configuration for the project -->
 	<build>
-		<!-- The plugins that are required to build and package the Spring Boot application -->
-		<plugins>
-			<!-- The Spring Boot Maven plugin: creates an executable JAR file -->
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-		</plugins>
-
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-maven-plugin</artifactId>
+					<!-- your code or other configurations -->
+				</plugin>
+			</plugins>
+		</pluginManagement>
 		<resources>
 			<resource>
 				<directory>src/main/resources</directory>
