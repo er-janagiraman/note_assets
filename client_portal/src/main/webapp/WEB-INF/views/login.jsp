@@ -53,7 +53,7 @@
 							<div id="login">
 								<form>
 									<div class="row">
-										<!-- User input -->
+										<!-- User Name input -->
 										<div class="form-outline mb-3 col-md-12">
 											<label class="form-label" for="form3Example3"><i class="fa fa-user"></i> User Name</label> 
 											<input type="text" id="form3Example3" class="form-control form-control-sm" placeholder="Enter User Name" />
@@ -85,27 +85,27 @@
 							<div id="register">
 								<form>
 									<div class="row">
-
+										<!-- Name input -->
 										<div class="form-outline mb-2 col-md-4">
 											<label class="form-label" for="form3Example3"><i class="fa fa-user-plus"></i> Name</label> 
 											<input type="text" id="form3Example3" class="form-control form-control-sm" placeholder="Enter Name" />
 										</div>
-
+										<!-- Email input -->
 										<div class="form-outline mb-2 col-md-4">
 											<label class="form-label" for="form3Example3"><i class="fa fa-envelope"></i> Email</label> 
 											<input type="email" id="form3Example3" class="form-control form-control-sm" placeholder="Enter Email" />
 										</div>
-
+										<!-- Email input -->
 										<div class="form-outline mb-2 col-md-4">
 											<label class="form-label" for="form3Example3"><i class="fa fa-mobile"></i> Mobile No</label> 
 											<input type="text" id="form3Example3" class="form-control form-control-sm" placeholder="Enter Mobile No" />
 										</div>
-
+										<!-- DOB input -->
 										<div class="form-outline mb-2 col-md-4">
 											<label class="form-label" for="form3Example3"><i class="fa fa-calendar"></i> DOB</label> 
 											<input type="text" class="form-control form-control-sm" placeholder="dd-mm-yyyy" id="dob" readonly>
 										</div>
-
+										<!-- Gender select -->
 										<div class="form-outline mb-2 col-md-4">
 											<label class="form-label" for="form3Example3"><i class="fa fa-venus-mars"></i> Gender</label> 
 											<select class="form-select form-select-sm" aria-label="Default select example">
@@ -116,17 +116,17 @@
 											</select>
 										</div>
 
-										<!-- User input -->
+										<!-- User Name input -->
 										<div class="form-outline mb-2 col-md-4">
 											<label class="form-label" for="form3Example3"><i class="fa fa-user"></i> User Name</label> 
 											<input type="text" id="form3Example3" class="form-control form-control-sm" placeholder="Enter User Name" />
 										</div>
-
+										<!-- Password input -->
 										<div class="form-outline mb-2 col-md-4">
 											<label class="form-label" for="form3Example3"><i class="fa fa-unlock-alt"></i> Password</label> 
 											<input type="password" id="form3Example3" class="form-control form-control-sm" placeholder="Enter Password" />
 										</div>
-
+										<!-- Re Password input -->
 										<div class="form-outline mb-1 col-md-4">
 											<label class="form-label" for="form3Example3"><i class="fa fa-unlock-alt"></i> Re-Password</label> 
 											<input type="password" id="form3Example3" class="form-control form-control-sm" placeholder="Confirm Password" />
