@@ -39,3 +39,32 @@ $(function() {
 	});
 
 });
+
+function submitLogin() {
+    var data = {
+        username: document.getElementById("username").value,
+        password: document.getElementById("password").value
+    };
+
+    fetch('/login', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+    })
+    .then(response => response.json())
+    .then(response => {
+        if (response.success) {
+            // Redirect to the dashboard page
+            window.location.href = '/dash';
+        } else {
+            // Handle error response here
+            console.log(response.message);
+        }
+    })
+    .catch(error => {
+        // Handle any network or server error here
+        console.log('An error occurred:', error);
+    });
+}

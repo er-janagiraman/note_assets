@@ -10,7 +10,7 @@ import com.portal.repo.LoginRepo;
 @Service
 public class LoginSvcImpl implements LoginSvc {
 
-	@Autowired
+	@Autowired(required=true)
 	LoginRepo loginRepo;
 	
 	private static Logger log = LoggerFactory.getLogger(LoginSvcImpl.class);

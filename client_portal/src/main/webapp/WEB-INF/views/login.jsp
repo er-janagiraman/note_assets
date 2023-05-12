@@ -55,14 +55,14 @@
 									<div class="row">
 										<!-- User Name input -->
 										<div class="form-outline mb-3 col-md-12">
-											<label class="form-label" for="form3Example3"><i class="fa fa-user"></i> User Name</label> 
-											<input type="text" id="form3Example3" class="form-control form-control-sm" placeholder="Enter User Name" />
+											<label class="form-label fw-bold float-start" for="form3Example3"><i class="fa fa-user"></i> User Name</label> 
+											<input type="text" id="username" class="form-control form-control-sm" placeholder="Enter User Name" />
 										</div>
 
 										<!-- Password input -->
 										<div class="form-outline mb-2 col-md-12">
-											<label class="form-label" for="form3Example4"><i class="fa fa-unlock"></i> Password</label> 
-											<input type="password" id="form3Example4" class="form-control form-control-sm" placeholder="Must be 8-20 characters long" />
+											<label class="form-label fw-bold float-start" for="form3Example4"><i class="fa fa-unlock"></i> Password</label> 
+											<input type="password" id="password" class="form-control form-control-sm" placeholder="Must be 8-20 characters long" />
 										</div>
 
 										<div class="d-flex justify-content-between align-items-center col-md-12">
@@ -75,7 +75,7 @@
 										</div>
 
 										<div class="text-center text-md-center mt-1 pt-2 col-md-12">
-											<button type="button" class="btn btn-primary btn-sm w-25">Submit</button>
+											<button type="button" class="btn btn-primary btn-sm w-25" onclick="submitLogin()" >Submit</button>
 										</div>
 
 									</div>
@@ -87,27 +87,27 @@
 									<div class="row">
 										<!-- Name input -->
 										<div class="form-outline mb-2 col-md-4">
-											<label class="form-label" for="form3Example3"><i class="fa fa-user-plus"></i> Name</label> 
+											<label class="form-label fw-bold float-start" for="form3Example3"><i class="fa fa-user-plus"></i> Name</label> 
 											<input type="text" id="form3Example3" class="form-control form-control-sm" placeholder="Enter Name" />
 										</div>
 										<!-- Email input -->
 										<div class="form-outline mb-2 col-md-4">
-											<label class="form-label" for="form3Example3"><i class="fa fa-envelope"></i> Email</label> 
+											<label class="form-label fw-bold float-start" for="form3Example3"><i class="fa fa-envelope"></i> Email</label> 
 											<input type="email" id="form3Example3" class="form-control form-control-sm" placeholder="Enter Email" />
 										</div>
 										<!-- Email input -->
 										<div class="form-outline mb-2 col-md-4">
-											<label class="form-label" for="form3Example3"><i class="fa fa-mobile"></i> Mobile No</label> 
+											<label class="form-label fw-bold float-start" for="form3Example3"><i class="fa fa-mobile"></i> Mobile No</label> 
 											<input type="text" id="form3Example3" class="form-control form-control-sm" placeholder="Enter Mobile No" />
 										</div>
 										<!-- DOB input -->
 										<div class="form-outline mb-2 col-md-4">
-											<label class="form-label" for="form3Example3"><i class="fa fa-calendar"></i> DOB</label> 
+											<label class="form-label fw-bold float-start" for="form3Example3"><i class="fa fa-calendar"></i> DOB</label> 
 											<input type="text" class="form-control form-control-sm" placeholder="dd-mm-yyyy" id="dob" readonly>
 										</div>
 										<!-- Gender select -->
 										<div class="form-outline mb-2 col-md-4">
-											<label class="form-label" for="form3Example3"><i class="fa fa-venus-mars"></i> Gender</label> 
+											<label class="form-label fw-bold float-start" for="form3Example3"><i class="fa fa-venus-mars"></i> Gender</label> 
 											<select class="form-select form-select-sm" aria-label="Default select example">
 												<option disabled selected>---- select ----</option>
 												<option value="Male">Male</option>
@@ -118,17 +118,17 @@
 
 										<!-- User Name input -->
 										<div class="form-outline mb-2 col-md-4">
-											<label class="form-label" for="form3Example3"><i class="fa fa-user"></i> User Name</label> 
+											<label class="form-label fw-bold float-start" for="form3Example3"><i class="fa fa-user"></i> User Name</label> 
 											<input type="text" id="form3Example3" class="form-control form-control-sm" placeholder="Enter User Name" />
 										</div>
 										<!-- Password input -->
 										<div class="form-outline mb-2 col-md-4">
-											<label class="form-label" for="form3Example3"><i class="fa fa-unlock-alt"></i> Password</label> 
+											<label class="form-label fw-bold float-start" for="form3Example3"><i class="fa fa-unlock-alt"></i> Password</label> 
 											<input type="password" id="form3Example3" class="form-control form-control-sm" placeholder="Enter Password" />
 										</div>
 										<!-- Re Password input -->
 										<div class="form-outline mb-1 col-md-4">
-											<label class="form-label" for="form3Example3"><i class="fa fa-unlock-alt"></i> Re-Password</label> 
+											<label class="form-label fw-bold float-start" for="form3Example3"><i class="fa fa-unlock-alt"></i> Re-Password</label> 
 											<input type="password" id="form3Example3" class="form-control form-control-sm" placeholder="Confirm Password" />
 										</div>
 

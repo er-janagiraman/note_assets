@@ -8,8 +8,8 @@ import org.springframework.context.annotation.ComponentScan;
 
 import com.portal.common.PropertiesUtil;
 
-@ComponentScan("com.portal")
 @SpringBootApplication
+@ComponentScan(basePackages = {"com.portal"})
 public class MainApp {
 
 	private static Logger log = LoggerFactory.getLogger(MainApp.class);
