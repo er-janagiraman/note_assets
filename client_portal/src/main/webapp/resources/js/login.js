@@ -22,8 +22,8 @@ $(function() {
 	var today = new Date();
 
 	// Set the year range to be from 100 years ago to the current year
-	var maxYear = new Date().getFullYear() -5;
-	var minYear = maxYear - 150;
+	var maxYear = new Date().getFullYear() - 5;
+	var minYear = maxYear - 90;
 
 	$("#dob").datepicker({
 		yearRange : minYear + ":" + maxYear,
